@@ -2,15 +2,16 @@
 <html>
 <head>
   <meta charset="{{encoding}}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>{{title}}</title>
   <style type="text/css">
     {{{style}}}
   </style>
 </head>
-<body>
-  {{{slideshow}}}
-
+<body class="inner-container">
+  <div id="zoomwrap" class="slideshowroot">
+    {{{slideshow}}}
+  </div>
   <script type="text/javascript">
     {{{script}}}
   </script>

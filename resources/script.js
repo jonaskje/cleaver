@@ -143,3 +143,21 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 });
+
+function layout(event) {
+	var tooWide = window.innerWidth/window.innerHeight > 1920.0/1080.0;
+	var zoomLevel = 1.0;
+	if (tooWide) {
+		zoomLevel = window.innerHeight / 1080.0;
+	} else {
+		zoomLevel = window.innerWidth  / 1920.0;
+	}
+	document.getElementById('zoomwrap').style.zoom = zoomLevel;
+}
+
+window.addEventListener('resize', layout, false);
+
+layout(null);
+
+
+
