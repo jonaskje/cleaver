@@ -24,7 +24,7 @@
     "q": "0.9.6",
     "js-yaml": "2.1.0",
     "highlight.js": "~7.3.0",
-    "jkmarked": "1.0.0",
+    "jkmarked": "jonaskje/marked",
     "commander": "~2.1.0",
     "node-ditaa": "jonaskje/node-ditaa"
   },
